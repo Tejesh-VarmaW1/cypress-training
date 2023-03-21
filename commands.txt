@@ -1,0 +1,40 @@
+navigating to url - cy.visit("url")
+getting elements - cy.get('css selector')
+to enter some value - cy.type
+assert the properties - cy.should('chainer','value') - chainer have lot of options to validate elements
+to wait for some time - cy.wait(2000)
+to get only visible elements - cy.get('css selector:visible')
+to get child elements for specific/elements under certain selector - cy.get('locator').find('locator2')
+to get certain index value - cy.get('locator').eq(index number)
+to search text we use - cy.contains()
+to click on certain element - cy.click()
+to iterate through an array - cy.get('ul>li').each(($el, index, $list) => {
+  // $el is a wrapped jQuery element
+  if ($el.someMethod() === 'something') {
+    // wrap this element so we can
+    // use cypress commands on it
+    cy.wrap($el).click()
+  } else {
+    // do something else
+  }
+})
+to get the text of element - cy.get('locator').text()
+to find partial text we use - string.includes - javascript method
+to resolve the promises - cy.wrap() - ex: cy.wrap($el)
+to store selector in variable - cy.get('locator').as('variable_name')
+find will search and filter based on cy.get('locator')
+to check any checkbox element nd validate checked or not - .check().should('be.checked')
+and to uncheck - .uncheck()
+for static dropdown we have - .select('value/name')
+in should for propert we use have. and behaviour we use be.
+to verify two props - .should('have.text').and('have.value','4')
+
+css selectors : 
+id - #idname
+
+classname - .classname - .search-keyword
+            tagname.classname
+
+customized with any attribue - tagname[attribute=value] - input[type='search']
+
+tagnames - - form input(parent to child)                   
