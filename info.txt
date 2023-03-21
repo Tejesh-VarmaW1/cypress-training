@@ -1,1 +1,26 @@
 Starting the cypress automation training
+
+command to run to open cypress test runner : npx cypress open
+
+through command line, cypress run in headless in electron(default)(means browser won't open)
+
+to run tests(headless mode) - 
+npx cypress run 
+
+to run test(headed mode) - 
+npx cypress run --headed
+
+to run test in other browser than electron - 
+npx cypress --browser chrome/firefox/edge
+
+for auto recomendation add the following line to test
+/// <reference types="cypress"/>
+
+cypress is async in nature
+
+should belongs to chai 
+
+console.log prints data in browser console
+cy.log prints data in test logs
+
+
