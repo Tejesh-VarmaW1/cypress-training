@@ -1,0 +1,3 @@
+/// <reference types="cypress"/>
+
+setting up test hooks - adopted from mocha - before, after, beforeEach, afterEach

@@ -24,3 +24,19 @@ console.log prints data in browser console
 cy.log prints data in test logs
 
 
+cypress auto accepts the alert. it just clicks ok on its own
+
+assertions are done by mocha
+mocha framework
+cypress api
+invoke is a jQuery fxn
+
+cypress cannot handle child tabs, so we need to manipulate the DOM, such that it opens in same tabs by removing target attribute
+
+for mouse hover cypress doesn't have any default methods, we use jQuery methods - invoke('show') or we can force click an element
+
+another way of handling child windows is by grabbing href link as we have access to DOM and going to it
+
+we use jQuery method to get attribue value - prop method
+
+to handle frames need to add plugin npm install -D cypress-iframe   - know the frame id

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Tejesh-VarmaW1/cypress-training#readme",
   "devDependencies": {
-    "cypress": "^12.8.1"
+    "cypress": "^12.8.1",
+    "cypress-iframe": "^1.0.1"
   }
 }

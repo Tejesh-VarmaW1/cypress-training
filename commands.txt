@@ -28,6 +28,15 @@ and to uncheck - .uncheck()
 for static dropdown we have - .select('value/name')
 in should for propert we use have. and behaviour we use be.
 to verify two props - .should('have.text').and('have.value','4')
+to trigger any event - cy.on('event name')
+to get the text of alert - s
+to use functions of jQuery or any other we use - cy.invoke(fxn name)
+to move forward or back to pages - cy.go('forward/back')
+to reload the pages- cy.reload()
+to get the url of current page use - cy.url()
+to switch to next sibling use, it works only on get - cy.get('locator').next()
+to interact with hidden elements - .click({force:true})
+
 
 css selectors : 
 id - #idname
@@ -37,4 +46,6 @@ classname - .classname - .search-keyword
 
 customized with any attribue - tagname[attribute=value] - input[type='search']
 
-tagnames - - form input(parent to child)                   
+tagnames - - form input(parent to child)      
+
+nth-child - - tr td:nth-child(2)
